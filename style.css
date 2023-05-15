@@ -1,74 +1,72 @@
 * {
-    margin: 0px;
-    list-style: none;
     padding: 0;
+        margin: 0;
+    list-style: none;
+    box-sizing: border-box;
 }
 
+/* conteneur bande de navigation */
 nav {
     display: flex;
     width: 100%;
+    align-items: center;
+        border: solid 2px;
+        border-color: #d1b872;
+        border-radius: 10px;
+        font-family: monospace;
+        color: rgb(141, 19, 19);
 }
 
-nav ul {
-    display: none;
-}
-
-.nav-right {
+/* conteneur logo  */
+.nav-left {
+    width: 15%;
     display: flex;
+    padding: 5px;
     align-items: center;
     justify-content: center;
-    border: solid;
-    border-radius: 5px;
-        border-color: #d1b872;
+}
+/* logo */
+.nav-left>img {
     width: 100%;
-    min-width: 186px;
-        margin: 3px;
-        padding: 5px;
+    min-width: 80px;
+    border-radius: 10px;
     }
     
-    .nav-right h1 {
-        text-align: center;
-    }
-    
-    .nav-right h2 {
-        font-size: small;
-}
-
-nav img {
-    width: 30px;
-    height: 30px;
-}
-
-.titre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* conteneur ul */
+.nav-middle {
     width: 70%;
-    padding: 10px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
-
-header {
+/* ul */
+.nav-middle>ul {
+    display: flex;
     width: 100%;
-    min-width: 186px;
+    align-items: center;
+        justify-content: space-around;
+        text-align: center;
 }
 
-header img {
-    width: 100%;
-        min-width: 207px;
+.nav-middle>ul>li>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+}
+/* conteneur bouton de connexion */
+.nav-right {
+    width: 15%;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
-header h2 {
-    /* width: 100px; */
-    text-align: center;
-    padding-top: 15px;
-        padding-bottom: 15px;
-}
-
-header p {
-    text-align: justify;
-    padding: 10px;
-        color: #f5f1f1;
-        background-color: #080606;
-    
-        min-width: 186px;
+/* bouton de connexion */
+.nav-right>button {
+    width: 80px;
+    font-family: monospace;
+    font-weight: bolder;
 }
